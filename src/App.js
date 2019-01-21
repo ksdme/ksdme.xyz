@@ -49,10 +49,18 @@ class App extends Component {
   render() {
     const labelSets = this.state.links.map((set) => {
       const labels = Object.keys(set).map((display) => {
-        return <Label><Link href={set[display]}>{ display }</Link></Label>;
+        return (
+          <Label key={display}>
+            <Link href={set[display]}>{ display }</Link>
+          </Label>
+        );
       });
 
-      return <LabelSet>{ labels }</LabelSet>;
+      return (
+        <LabelSet>
+          { labels }
+        </LabelSet>
+      );
     });
 
     return (

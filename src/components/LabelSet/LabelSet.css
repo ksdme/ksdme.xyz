@@ -1,0 +1,12 @@
+.label-set {
+  display: block;
+  text-align: center;
+}
+
+.label-set .label-span::after {
+  content: ' • ';
+}
+
+.label-set .label-span:last-child::after {
+  content: '';
+}

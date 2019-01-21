@@ -2,3 +2,8 @@
   color: #3C3C3C;
   text-decoration: none;
 }
+
+.link:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}

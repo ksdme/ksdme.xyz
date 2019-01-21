@@ -2,5 +2,4 @@
 
 set -e -x
 
-npm install
-npm run build
+yarn build
